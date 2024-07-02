@@ -12,7 +12,7 @@ vector<int> djisktraUsingPQ(int S, int V, vector<vector<pair<int, int>>> adj)
     // initilially we start from source node whose distance from source is 0.
     dist[S] = 0;
     // push the pair into pq
-    // the generally used convention for making pair is {distance,node}
+    // we store it in the pair {distance,node}
     pq.push({0, S});
 
     while (!pq.empty())
