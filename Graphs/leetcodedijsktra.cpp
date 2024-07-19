@@ -24,7 +24,7 @@ double maxProbability(int n, vector<vector<int>> &edges, vector<double> &succPro
     pq.push({1.0,start_node});
 
     vector<double> probabilites(n,0.0);
-    // initializing 1.0 as multiplying with 1.0 doesnot change the value
+    // initializing 1.0 as multiplying with 1.0 doesnot change the value also the probability for reaching from source to same node always 1.
     probabilites[start_node] = 1.0;
 
     while(!pq.empty()){
